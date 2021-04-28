@@ -13,7 +13,8 @@ protocol RestaurantServiceProtocol {
 }
 
 final class RestaurantService: RestaurantServiceProtocol {
-    
+
+    /// - Returns : Observable<[Restaurant]>
     func fetchRestaurants() -> Observable<[Restaurant]> {
         
         return Observable.create { observer -> Disposable in

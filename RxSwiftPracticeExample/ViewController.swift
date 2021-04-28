@@ -16,8 +16,9 @@ final class ViewController: UIViewController {
     private let disposeBag = DisposeBag()
     private var viewModel: RestaurantsListViewModel!
 
+    /// Returns - ViewController
     static func instantiate(viewModel: RestaurantsListViewModel) -> ViewController {
-        let storyboard = UIStoryboard(name: "Main", bundle: .main)
+        let storyboard = UIStoryboard(name: "Restaurant", bundle: .main)
         let viewController = storyboard.instantiateInitialViewController() as! ViewController
         viewController.viewModel = viewModel
         return viewController
